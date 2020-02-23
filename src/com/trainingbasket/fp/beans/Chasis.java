@@ -2,7 +2,7 @@ package com.trainingbasket.fp.beans;
 
 public class Chasis {
 
-    private  static  int tempId;
+    /*private  static  int tempId;
     private  int id;
     private  Battery battery;
     private  Display display;
@@ -32,5 +32,5 @@ public class Chasis {
                 ", ram=" + ram +
                 ", processor=" + processor +
                 '}';
-    }
+    }*/
 }

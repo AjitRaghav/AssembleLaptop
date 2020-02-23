@@ -1,63 +1,78 @@
 package com.trainingbasket.fp.beans;
 
 public class Keybord {
-    static  int tempId;
-    private int id;
-    private String brand;
-
-    @Override
-    public String toString() {
-        return "Keybord{" +
-                "id=" + id +
-                ", brand='" + brand + '\'' +
-                ", type='" + type + '\'' +
-                ", price=" + price +
-                '}';
-    }
-
-    public Keybord(String brand, String type, float price) {
-        this.id= ++tempId;
-
-        this.brand = brand;
-        this.type = type;
-        this.price = price;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
     private String type;
+    private  String color;
+    private double weight;
+    private  int battery;
+    private int cost;
 
-    public int getId() {
-        return id;
+    public Keybord(String type, String color, double weight, int battery, int cost) {
+        this.type = type;
+        this.color = color;
+        this.weight = weight;
+        this.battery = battery;
+        this.cost = cost;
     }
 
-    public String getBrand() {
-        return brand;
+    public Keybord(String type, String color, double weight, int cost) {
+        this.type = type;
+        this.color = color;
+        this.weight = weight;
+        this.cost = cost;
     }
 
     public String getType() {
         return type;
     }
 
-    public float getPrice() {
-        return price;
+    public String getColor() {
+        return color;
     }
 
-    private float price;
+    public double getWeight() {
+        return weight;
+    }
 
+    public int getBattery() {
+        return battery;
+    }
 
+    public int getCost() {
+        return cost;
+    }
 
+    public void setType(String type) {
+        this.type = type;
+    }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setBattery(int battery) {
+        this.battery = battery;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    @Override
+    public String toString() {
+        return "Keybord{" +
+                "type='" + type + '\'' +
+                ", color='" + color + '\'' +
+                ", weight=" + weight +
+                ", battery=" + battery +
+                ", cost=" + cost +
+                '}';
+    }
 }
+
 
 
